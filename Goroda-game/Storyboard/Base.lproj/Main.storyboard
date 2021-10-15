@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StartVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StartVC" id="BYZ-38-t0r" customClass="StartVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-tm-KVK">
+                                <rect key="frame" x="54" y="264.5" width="212" height="39"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="ОДИНОЧНАЯ ИГРА">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W4y-dG-8JT" kind="presentation" modalPresentationStyle="fullScreen" id="3d1-PW-Jpc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnp-ud-axT">
+                                <rect key="frame" x="16" y="20" width="288" height="236.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Eq-ly-Mwi">
+                                <rect key="frame" x="54" y="319" width="212" height="39"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="С ДРУЗЬЯМИ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hub-Pg-Rzn" kind="presentation" modalPresentationStyle="fullScreen" id="mIx-15-71p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB3-Wl-a6z">
+                                <rect key="frame" x="54" y="374" width="212" height="39"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="ПРАВИЛА">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0wF-iP-sPd" kind="presentation" modalPresentationStyle="fullScreen" id="dY1-2b-ujC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gnp-ud-axT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="15V-jh-bzd"/>
+                            <constraint firstItem="bX3-tm-KVK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="1Go-Vt-rDz"/>
+                            <constraint firstItem="2Eq-ly-Mwi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="JrQ-3p-gdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bX3-tm-KVK" secondAttribute="trailing" constant="54" id="O4d-Qs-0OZ"/>
+                            <constraint firstItem="gnp-ud-axT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RWT-W0-wA0"/>
+                            <constraint firstItem="mB3-Wl-a6z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Tne-Kn-Fu8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Eq-ly-Mwi" secondAttribute="trailing" constant="54" id="UJX-gN-402"/>
+                            <constraint firstItem="2Eq-ly-Mwi" firstAttribute="top" secondItem="bX3-tm-KVK" secondAttribute="bottom" constant="15.5" id="b3s-Vm-ykN"/>
+                            <constraint firstItem="mB3-Wl-a6z" firstAttribute="top" secondItem="2Eq-ly-Mwi" secondAttribute="bottom" constant="16" id="daM-Fd-l0a"/>
+                            <constraint firstItem="bX3-tm-KVK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMb-mO-VqY"/>
+                            <constraint firstItem="bX3-tm-KVK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jh4-Wb-SNX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mB3-Wl-a6z" secondAttribute="trailing" constant="54" id="nqY-hp-GeD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gnp-ud-axT" secondAttribute="trailing" constant="16" id="vUg-s1-dmq"/>
+                            <constraint firstItem="bX3-tm-KVK" firstAttribute="top" secondItem="gnp-ud-axT" secondAttribute="bottom" constant="8" id="vyS-0e-iPB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityStartImage" destination="gnp-ud-axT" id="wZu-SP-vMg"/>
+                        <outlet property="regulationsButton" destination="mB3-Wl-a6z" id="FlU-9W-wLv"/>
+                        <outlet property="startButton" destination="bX3-tm-KVK" id="4vS-zU-ePu"/>
+                        <outlet property="startPVPButton" destination="2Eq-ly-Mwi" id="w7U-B1-dFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="92.957746478873247"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="OTo-sh-70s">
+            <objects>
+                <viewController id="W4y-dG-8JT" customClass="GameVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaV-Fn-QM0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI6-3i-hoZ">
+                                <rect key="frame" x="16" y="322" width="103" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ОТВЕТИТЬ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="W4y-dG-8JT" eventType="touchUpInside" id="moJ-Ge-2WY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZS-vi-Ikg">
+                                <rect key="frame" x="209" y="322" width="95" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="СДАТЬСЯ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Sfh-3U-fFM" kind="presentation" modalPresentationStyle="fullScreen" id="qQ1-H0-P0g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГОРОД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-pT-c1b">
+                                <rect key="frame" x="16" y="220" width="288" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВАШИ ОЧКИ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7T-Yy-DY4">
+                                <rect key="frame" x="16" y="20" width="111.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-Np-tIo">
+                                <rect key="frame" x="293" y="20" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ВВЕДИТЕ ГОРОД" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mf6-XQ-gEI">
+                                <rect key="frame" x="16" y="263" width="288" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-4W-hO1">
+                                <rect key="frame" x="16" y="49" width="288" height="206"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p4Z-Ad-56F" firstAttribute="trailing" secondItem="T6v-Np-tIo" secondAttribute="trailing" constant="16" id="8aa-i5-Sah"/>
+                            <constraint firstItem="Mf6-XQ-gEI" firstAttribute="top" secondItem="mBB-4W-hO1" secondAttribute="bottom" constant="8" id="FQe-Nd-jPm"/>
+                            <constraint firstItem="Y7T-Yy-DY4" firstAttribute="leading" secondItem="p4Z-Ad-56F" secondAttribute="leading" constant="16" id="JUB-1t-Jkk"/>
+                            <constraint firstItem="mBB-4W-hO1" firstAttribute="leading" secondItem="p4Z-Ad-56F" secondAttribute="leading" constant="16" id="KdF-KG-0Yt"/>
+                            <constraint firstItem="zI6-3i-hoZ" firstAttribute="leading" secondItem="p4Z-Ad-56F" secondAttribute="leading" constant="16" id="NjJ-xD-wmf"/>
+                            <constraint firstItem="Mf6-XQ-gEI" firstAttribute="centerY" secondItem="uaV-Fn-QM0" secondAttribute="centerY" id="Via-am-Rii"/>
+                            <constraint firstItem="Mf6-XQ-gEI" firstAttribute="top" secondItem="cTs-pT-c1b" secondAttribute="bottom" constant="8" id="WWv-iD-0WG"/>
+                            <constraint firstItem="p4Z-Ad-56F" firstAttribute="trailing" secondItem="mBB-4W-hO1" secondAttribute="trailing" constant="16" id="b6Q-MY-3qf"/>
+                            <constraint firstItem="Y7T-Yy-DY4" firstAttribute="top" secondItem="p4Z-Ad-56F" secondAttribute="top" constant="20" id="bdh-pk-yEd"/>
+                            <constraint firstItem="Mf6-XQ-gEI" firstAttribute="centerX" secondItem="uaV-Fn-QM0" secondAttribute="centerX" id="gfp-lP-uO2"/>
+                            <constraint firstItem="Mf6-XQ-gEI" firstAttribute="leading" secondItem="p4Z-Ad-56F" secondAttribute="leading" constant="16" id="lUl-xh-x0a"/>
+                            <constraint firstItem="mBB-4W-hO1" firstAttribute="top" secondItem="Y7T-Yy-DY4" secondAttribute="bottom" constant="8" id="pzB-dj-fLl"/>
+                            <constraint firstItem="cTs-pT-c1b" firstAttribute="leading" secondItem="p4Z-Ad-56F" secondAttribute="leading" constant="16" id="qXl-B5-Nk3"/>
+                            <constraint firstItem="cTs-pT-c1b" firstAttribute="top" secondItem="Y7T-Yy-DY4" secondAttribute="bottom" constant="179" id="r9a-u6-yL8"/>
+                            <constraint firstItem="zI6-3i-hoZ" firstAttribute="top" secondItem="Mf6-XQ-gEI" secondAttribute="bottom" constant="17" id="rVQ-Jm-SUS"/>
+                            <constraint firstItem="tZS-vi-Ikg" firstAttribute="top" secondItem="Mf6-XQ-gEI" secondAttribute="bottom" constant="17" id="sD7-b1-I1y"/>
+                            <constraint firstItem="p4Z-Ad-56F" firstAttribute="trailing" secondItem="tZS-vi-Ikg" secondAttribute="trailing" constant="16" id="tsc-H3-MW4"/>
+                            <constraint firstItem="p4Z-Ad-56F" firstAttribute="trailing" secondItem="cTs-pT-c1b" secondAttribute="trailing" constant="16" id="wDv-BB-GsH"/>
+                            <constraint firstItem="T6v-Np-tIo" firstAttribute="top" secondItem="p4Z-Ad-56F" secondAttribute="top" constant="20" id="xz9-8U-NeL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p4Z-Ad-56F"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButtonOutlet" destination="zI6-3i-hoZ" id="fsd-Nn-Vw7"/>
+                        <outlet property="cityImage" destination="mBB-4W-hO1" id="gSb-2x-oxD"/>
+                        <outlet property="cityLabel" destination="cTs-pT-c1b" id="TaT-qW-Grd"/>
+                        <outlet property="cityTF" destination="Mf6-XQ-gEI" id="7Ma-8R-Kje"/>
+                        <outlet property="finishButtomOutlet" destination="tZS-vi-Ikg" id="oYu-dU-R2N"/>
+                        <outlet property="playerLabel" destination="T6v-Np-tIo" id="mly-qp-qBw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOL-LU-P6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.75" y="94.014084507042256"/>
+        </scene>
+        <!--FinalVC-->
+        <scene sceneID="EnM-7b-xkK">
+            <objects>
+                <viewController id="Sfh-3U-fFM" customClass="FinalVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qse-oh-IDp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ИГРА ОКОНЧЕНА!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k41-P3-3Ia">
+                                <rect key="frame" x="48" y="70" width="225" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o3-Vx-Qda">
+                                <rect key="frame" x="67" y="408" width="187" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ЗАКОНЧИТЬ ИГРУ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishGameButton:" destination="Sfh-3U-fFM" eventType="touchUpInside" id="Icz-vF-k0k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ОЧКИ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9L-OO-dIE">
+                                <rect key="frame" x="16" y="130" width="57" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГОРОДОВ В ИГРЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFD-Vg-hO1">
+                                <rect key="frame" x="16" y="170" width="174" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-h4-9pg">
+                                <rect key="frame" x="270" y="170" width="34" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pz5-L7-Sph">
+                                <rect key="frame" x="16" y="202" width="288" height="188"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17G-SB-qrl">
+                                <rect key="frame" x="270" y="130" width="34" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6o3-Vx-Qda" firstAttribute="leading" secondItem="LAF-0R-ScA" secondAttribute="leading" constant="67" id="1S4-5k-R0m"/>
+                            <constraint firstItem="6o3-Vx-Qda" firstAttribute="top" secondItem="pz5-L7-Sph" secondAttribute="bottom" constant="18" id="2zw-Iz-9Cf"/>
+                            <constraint firstItem="q9L-OO-dIE" firstAttribute="leading" secondItem="LAF-0R-ScA" secondAttribute="leading" constant="16" id="36X-i8-szb"/>
+                            <constraint firstItem="LFD-Vg-hO1" firstAttribute="leading" secondItem="LAF-0R-ScA" secondAttribute="leading" constant="16" id="8Qm-jl-gZ4"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="trailing" secondItem="6o3-Vx-Qda" secondAttribute="trailing" constant="66" id="EZm-df-TNp"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="trailing" secondItem="k41-P3-3Ia" secondAttribute="trailing" constant="47" id="I9R-AB-qJu"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="trailing" secondItem="pz5-L7-Sph" secondAttribute="trailing" constant="16" id="IUW-hp-eCD"/>
+                            <constraint firstItem="q9L-OO-dIE" firstAttribute="top" secondItem="k41-P3-3Ia" secondAttribute="bottom" constant="30" id="IZj-9B-xMq"/>
+                            <constraint firstItem="pz5-L7-Sph" firstAttribute="top" secondItem="LFD-Vg-hO1" secondAttribute="bottom" constant="8" id="JUq-LK-EEn"/>
+                            <constraint firstItem="17G-SB-qrl" firstAttribute="top" secondItem="LAF-0R-ScA" secondAttribute="top" constant="130" id="OEe-pF-liQ"/>
+                            <constraint firstItem="k41-P3-3Ia" firstAttribute="leading" secondItem="LAF-0R-ScA" secondAttribute="leading" constant="48" id="PRN-M9-2KL"/>
+                            <constraint firstItem="LFD-Vg-hO1" firstAttribute="top" secondItem="q9L-OO-dIE" secondAttribute="bottom" constant="16" id="VpD-vD-rPI"/>
+                            <constraint firstItem="k41-P3-3Ia" firstAttribute="top" secondItem="LAF-0R-ScA" secondAttribute="top" constant="70" id="YIh-Vm-2OP"/>
+                            <constraint firstItem="pz5-L7-Sph" firstAttribute="leading" secondItem="LAF-0R-ScA" secondAttribute="leading" constant="16" id="c4w-FQ-DwF"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="trailing" secondItem="17G-SB-qrl" secondAttribute="trailing" constant="16" id="cuB-pf-KA0"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="trailing" secondItem="Rka-h4-9pg" secondAttribute="trailing" constant="16" id="iEC-Mv-wF4"/>
+                            <constraint firstItem="Rka-h4-9pg" firstAttribute="top" secondItem="17G-SB-qrl" secondAttribute="bottom" constant="16" id="riR-In-Yyt"/>
+                            <constraint firstItem="LAF-0R-ScA" firstAttribute="bottom" secondItem="6o3-Vx-Qda" secondAttribute="bottom" constant="125" id="yaD-vA-usa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LAF-0R-ScA"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Rka-h4-9pg" id="Zl3-S8-Qbh"/>
+                        <outlet property="finishGameButtonOutlet" destination="6o3-Vx-Qda" id="ZFb-N1-DjC"/>
+                        <outlet property="finishGameImage" destination="pz5-L7-Sph" id="IwP-pG-wet"/>
+                        <outlet property="playerLabel" destination="17G-SB-qrl" id="uH4-xP-Mn4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oaj-fq-opM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="93"/>
+        </scene>
+        <!--RegulationVC-->
+        <scene sceneID="JTX-LR-coO">
+            <objects>
+                <viewController id="0wF-iP-sPd" customClass="RegulationVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VE3-Tf-KOL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАВИЛА ИГРЫ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXc-Tb-yzV">
+                                <rect key="frame" x="78" y="20" width="164" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tmo-Cw-s6i">
+                                <rect key="frame" x="16" y="52" width="288" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tmo-Cw-s6i" secondAttribute="height" multiplier="9:4" id="KOu-dM-FcU"/>
+                                </constraints>
+                                <string key="text">Классическая игра, в которой каждый участник в свою очередь называет реально существующий город любой страны, название которого начинается на ту букву, которой оканчивается название предыдущего города</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="одиночная игра" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-ip-wO8">
+                                <rect key="frame" x="78" y="188" width="158" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Игра против компьютера. Попробуйте набрать как можно больше очков в игре против невероятно сложного ИИ!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zwp-vg-Mk1">
+                                <rect key="frame" x="13" y="220" width="288" height="69"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zwp-vg-Mk1" secondAttribute="height" multiplier="96:23" id="fYn-Yh-4WY"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="с друзьями" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaE-Pz-FHW">
+                                <rect key="frame" x="104" y="297" width="113" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="13x-5e-lGt">
+                                <rect key="frame" x="13" y="329" width="288" height="88"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="13x-5e-lGt" secondAttribute="height" multiplier="36:11" id="tFQ-eU-Ora"/>
+                                </constraints>
+                                <string key="text">Играйте против друзей по очереди. Победит сильнейший! 
+Максимально возможно до 6 игроков!
+Время на ответ ограничено 1 минутой!</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-wI-nfF">
+                                <rect key="frame" x="128" y="449" width="70" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="К ИГРЕ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="0wF-iP-sPd" eventType="touchUpInside" id="HgH-mw-fB7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zwp-vg-Mk1" firstAttribute="top" secondItem="v1x-ip-wO8" secondAttribute="bottom" constant="8" id="0cS-J0-UHl"/>
+                            <constraint firstItem="GaE-Pz-FHW" firstAttribute="top" secondItem="zwp-vg-Mk1" secondAttribute="bottom" constant="8" id="3ev-3b-LoQ"/>
+                            <constraint firstItem="v1x-ip-wO8" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="78" id="4jz-C8-XSc"/>
+                            <constraint firstItem="gXc-Tb-yzV" firstAttribute="top" secondItem="AZW-ZK-den" secondAttribute="top" constant="20" id="52N-sX-brQ"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="v1x-ip-wO8" secondAttribute="trailing" constant="84" id="6z8-Dd-Jty"/>
+                            <constraint firstItem="zwp-vg-Mk1" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="13" id="D1L-5g-Uye"/>
+                            <constraint firstItem="13x-5e-lGt" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="13" id="EHZ-zS-zaG"/>
+                            <constraint firstItem="Tmo-Cw-s6i" firstAttribute="top" secondItem="gXc-Tb-yzV" secondAttribute="bottom" constant="8" id="FDI-JJ-LU9"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="Tmo-Cw-s6i" secondAttribute="trailing" constant="16" id="Omw-b7-YBe"/>
+                            <constraint firstItem="gXc-Tb-yzV" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="78" id="YTj-nh-8o9"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="zwp-vg-Mk1" secondAttribute="trailing" constant="19" id="axk-Jc-7Pu"/>
+                            <constraint firstItem="GaE-Pz-FHW" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="104" id="bIR-pt-6WI"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="gXc-Tb-yzV" secondAttribute="trailing" constant="78" id="btB-tg-DHd"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="jFy-wI-nfF" secondAttribute="trailing" constant="122" id="dNP-gs-Dgl"/>
+                            <constraint firstItem="Tmo-Cw-s6i" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="16" id="e79-v1-hZf"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="GaE-Pz-FHW" secondAttribute="trailing" constant="103" id="eTj-eI-VhU"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="trailing" secondItem="13x-5e-lGt" secondAttribute="trailing" constant="19" id="hX8-XF-qU2"/>
+                            <constraint firstItem="v1x-ip-wO8" firstAttribute="top" secondItem="Tmo-Cw-s6i" secondAttribute="bottom" constant="8" id="jAF-IO-5Xe"/>
+                            <constraint firstItem="AZW-ZK-den" firstAttribute="bottom" secondItem="jFy-wI-nfF" secondAttribute="bottom" constant="84" id="lQF-w8-MHh"/>
+                            <constraint firstItem="jFy-wI-nfF" firstAttribute="leading" secondItem="AZW-ZK-den" secondAttribute="leading" constant="128" id="uCu-9o-7rq"/>
+                            <constraint firstItem="13x-5e-lGt" firstAttribute="top" secondItem="GaE-Pz-FHW" secondAttribute="bottom" constant="8" id="z5a-HT-liI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZW-ZK-den"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButtonOutlet" destination="jFy-wI-nfF" id="28m-6v-cte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wem-Wz-UhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="859.85915492957747"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="9aJ-WB-mHh">
+            <objects>
+                <viewController id="hub-Pg-Rzn" customClass="SettingsVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNz-Sa-Luz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВВЕДИТЕ ИМЯ ИГРОКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ND-Oj-uXB">
+                                <rect key="frame" x="58" y="34" width="204" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKl-P2-vO7">
+                                <rect key="frame" x="16" y="79" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMk-l8-28a">
+                                <rect key="frame" x="108" y="131" width="108" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ДОБАВИТЬ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addName:" destination="hub-Pg-Rzn" eventType="touchUpInside" id="L8a-aW-VfP"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ct-q2-0A5">
+                                <rect key="frame" x="16" y="196" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-9i-FxK">
+                                <rect key="frame" x="16" y="241" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvq-U7-lar">
+                                <rect key="frame" x="16" y="287" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-zc-xtH">
+                                <rect key="frame" x="16" y="379" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gps-bU-mnP">
+                                <rect key="frame" x="16" y="333" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-eo-4GC">
+                                <rect key="frame" x="128" y="472" width="70" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="К ИГРЕ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameButton:" destination="hub-Pg-Rzn" eventType="touchUpInside" id="IgS-M8-0g6"/>
+                                    <segue destination="FHL-aC-OdY" kind="presentation" modalPresentationStyle="fullScreen" id="tuh-ob-XcO"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5u-tS-mOQ">
+                                <rect key="frame" x="16" y="425" width="288" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="5ND-Oj-uXB" secondAttribute="trailing" constant="58" id="1CS-md-ypt"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="Scc-zc-xtH" secondAttribute="trailing" constant="16" id="3yr-RX-ko8"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="bottom" secondItem="gp4-eo-4GC" secondAttribute="bottom" constant="61" id="8xv-0d-Cvl"/>
+                            <constraint firstItem="5ND-Oj-uXB" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="58" id="AUJ-02-8n5"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="gps-bU-mnP" secondAttribute="trailing" constant="16" id="Dcn-uy-Dgw"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="rMk-l8-28a" secondAttribute="trailing" constant="104" id="GEu-ro-XzT"/>
+                            <constraint firstItem="rMk-l8-28a" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="108" id="JYH-O9-8ov"/>
+                            <constraint firstItem="gps-bU-mnP" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="Kog-qS-5pk"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="SKl-P2-vO7" secondAttribute="trailing" constant="16" id="LEA-DY-75n"/>
+                            <constraint firstItem="3ct-q2-0A5" firstAttribute="top" secondItem="rMk-l8-28a" secondAttribute="bottom" constant="30" id="OrQ-BO-hxV"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="gp4-eo-4GC" secondAttribute="trailing" constant="122" id="Pj0-tm-4lt"/>
+                            <constraint firstItem="ALa-9i-FxK" firstAttribute="top" secondItem="3ct-q2-0A5" secondAttribute="bottom" constant="21.5" id="SJf-Pf-08a"/>
+                            <constraint firstItem="c5u-tS-mOQ" firstAttribute="top" secondItem="Scc-zc-xtH" secondAttribute="bottom" constant="22.5" id="TDT-Lj-bIN"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="ALa-9i-FxK" secondAttribute="trailing" constant="16" id="TFi-tV-rNs"/>
+                            <constraint firstItem="Scc-zc-xtH" firstAttribute="top" secondItem="gps-bU-mnP" secondAttribute="bottom" constant="22.5" id="TuC-o7-o5r"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="c5u-tS-mOQ" secondAttribute="trailing" constant="16" id="UtL-pA-4gg"/>
+                            <constraint firstItem="Uvq-U7-lar" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="XZT-uM-Rnu"/>
+                            <constraint firstItem="SKl-P2-vO7" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="ZRP-fg-dEL"/>
+                            <constraint firstItem="3ct-q2-0A5" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="b8h-Rw-DoA"/>
+                            <constraint firstItem="gps-bU-mnP" firstAttribute="top" secondItem="Uvq-U7-lar" secondAttribute="bottom" constant="22.5" id="dR9-pM-05B"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="3ct-q2-0A5" secondAttribute="trailing" constant="16" id="f58-yh-G3y"/>
+                            <constraint firstItem="5ND-Oj-uXB" firstAttribute="top" secondItem="7UO-8t-GM6" secondAttribute="top" constant="34" id="f6o-Cx-MFS"/>
+                            <constraint firstItem="SKl-P2-vO7" firstAttribute="top" secondItem="5ND-Oj-uXB" secondAttribute="bottom" constant="24" id="lYL-3O-rvT"/>
+                            <constraint firstItem="7UO-8t-GM6" firstAttribute="trailing" secondItem="Uvq-U7-lar" secondAttribute="trailing" constant="16" id="rMS-Wg-T9g"/>
+                            <constraint firstItem="gp4-eo-4GC" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="128" id="rUY-0L-fRO"/>
+                            <constraint firstItem="Scc-zc-xtH" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="sSd-NP-aQW"/>
+                            <constraint firstItem="ALa-9i-FxK" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="swc-rE-9FZ"/>
+                            <constraint firstItem="rMk-l8-28a" firstAttribute="top" secondItem="SKl-P2-vO7" secondAttribute="bottom" constant="18" id="vww-Rc-tiv"/>
+                            <constraint firstItem="c5u-tS-mOQ" firstAttribute="leading" secondItem="7UO-8t-GM6" secondAttribute="leading" constant="16" id="y9r-IC-qAp"/>
+                            <constraint firstItem="Uvq-U7-lar" firstAttribute="top" secondItem="ALa-9i-FxK" secondAttribute="bottom" constant="22.5" id="ztC-xY-Qw9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7UO-8t-GM6"/>
+                    </view>
+                    <connections>
+                        <outlet property="addNameButtonOutlet" destination="rMk-l8-28a" id="CzA-C9-yZf"/>
+                        <outlet property="gameButtonOutlet" destination="gp4-eo-4GC" id="6Xw-eZ-Y2u"/>
+                        <outlet property="nameFive" destination="Scc-zc-xtH" id="5dt-T2-Uew"/>
+                        <outlet property="nameFour" destination="gps-bU-mnP" id="CYT-BD-Qfe"/>
+                        <outlet property="nameOne" destination="3ct-q2-0A5" id="Q8w-m9-DVc"/>
+                        <outlet property="nameSix" destination="c5u-tS-mOQ" id="MPy-04-xuQ"/>
+                        <outlet property="nameTF" destination="SKl-P2-vO7" id="K7Q-Kt-gi6"/>
+                        <outlet property="nameThree" destination="Uvq-U7-lar" id="mtj-ea-lVb"/>
+                        <outlet property="nameTwo" destination="ALa-9i-FxK" id="shg-8M-S8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmg-7B-RO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="770"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="8Ga-pU-nvp">
+            <objects>
+                <viewController id="z3q-2z-FoF" customClass="GameVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVX-SY-L41">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgN-LS-JS2">
+                                <rect key="frame" x="16" y="322" width="103" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ОТВЕТИТЬ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="z3q-2z-FoF" eventType="touchUpInside" id="gC3-hu-wQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpH-Gy-634">
+                                <rect key="frame" x="209" y="322" width="95" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="СДАТЬСЯ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГОРОД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKH-ta-aZn">
+                                <rect key="frame" x="16" y="220" width="288" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВАШИ ОЧКИ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLx-VL-HPs">
+                                <rect key="frame" x="16" y="20" width="111.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYh-oX-I4s">
+                                <rect key="frame" x="293" y="20" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ВВЕДИТЕ ГОРОД" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXH-fd-pV2">
+                                <rect key="frame" x="16" y="263" width="288" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7a-HE-1vU">
+                                <rect key="frame" x="16" y="49" width="288" height="206"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f7a-HE-1vU" firstAttribute="top" secondItem="DLx-VL-HPs" secondAttribute="bottom" constant="8" id="2d2-b9-DMJ"/>
+                            <constraint firstItem="qHA-tu-drO" firstAttribute="trailing" secondItem="TpH-Gy-634" secondAttribute="trailing" constant="16" id="94M-N0-vuA"/>
+                            <constraint firstItem="f7a-HE-1vU" firstAttribute="leading" secondItem="qHA-tu-drO" secondAttribute="leading" constant="16" id="9C4-bV-fzW"/>
+                            <constraint firstItem="fKH-ta-aZn" firstAttribute="leading" secondItem="qHA-tu-drO" secondAttribute="leading" constant="16" id="Anf-YN-qsE"/>
+                            <constraint firstItem="DLx-VL-HPs" firstAttribute="leading" secondItem="qHA-tu-drO" secondAttribute="leading" constant="16" id="Ct9-hg-UPj"/>
+                            <constraint firstItem="fKH-ta-aZn" firstAttribute="top" secondItem="DLx-VL-HPs" secondAttribute="bottom" constant="179" id="DKO-Nu-WaH"/>
+                            <constraint firstItem="CXH-fd-pV2" firstAttribute="centerY" secondItem="gVX-SY-L41" secondAttribute="centerY" id="JCG-sy-UBo"/>
+                            <constraint firstItem="qHA-tu-drO" firstAttribute="trailing" secondItem="f7a-HE-1vU" secondAttribute="trailing" constant="16" id="JQG-Bl-qJO"/>
+                            <constraint firstItem="CXH-fd-pV2" firstAttribute="top" secondItem="fKH-ta-aZn" secondAttribute="bottom" constant="8" id="Jws-BG-W0c"/>
+                            <constraint firstItem="CXH-fd-pV2" firstAttribute="centerX" secondItem="gVX-SY-L41" secondAttribute="centerX" id="Kiq-IM-rKf"/>
+                            <constraint firstItem="qHA-tu-drO" firstAttribute="trailing" secondItem="fKH-ta-aZn" secondAttribute="trailing" constant="16" id="OG2-Rc-1Rs"/>
+                            <constraint firstItem="qHA-tu-drO" firstAttribute="trailing" secondItem="xYh-oX-I4s" secondAttribute="trailing" constant="16" id="RdD-0c-upk"/>
+                            <constraint firstItem="CXH-fd-pV2" firstAttribute="leading" secondItem="qHA-tu-drO" secondAttribute="leading" constant="16" id="bg9-os-Z79"/>
+                            <constraint firstItem="DLx-VL-HPs" firstAttribute="top" secondItem="qHA-tu-drO" secondAttribute="top" constant="20" id="exc-yb-13X"/>
+                            <constraint firstItem="TpH-Gy-634" firstAttribute="top" secondItem="CXH-fd-pV2" secondAttribute="bottom" constant="17" id="h3B-Xd-sBe"/>
+                            <constraint firstItem="CXH-fd-pV2" firstAttribute="top" secondItem="f7a-HE-1vU" secondAttribute="bottom" constant="8" id="jl3-HZ-VzL"/>
+                            <constraint firstItem="JgN-LS-JS2" firstAttribute="leading" secondItem="qHA-tu-drO" secondAttribute="leading" constant="16" id="npz-1R-F8J"/>
+                            <constraint firstItem="JgN-LS-JS2" firstAttribute="top" secondItem="CXH-fd-pV2" secondAttribute="bottom" constant="17" id="vGk-W6-aaX"/>
+                            <constraint firstItem="xYh-oX-I4s" firstAttribute="top" secondItem="qHA-tu-drO" secondAttribute="top" constant="20" id="yRG-Xn-aae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qHA-tu-drO"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButtonOutlet" destination="JgN-LS-JS2" id="DOk-sH-rK6"/>
+                        <outlet property="cityImage" destination="f7a-HE-1vU" id="uiS-tM-hIr"/>
+                        <outlet property="cityLabel" destination="fKH-ta-aZn" id="2ym-xC-VZL"/>
+                        <outlet property="cityTF" destination="CXH-fd-pV2" id="AIh-lJ-L4y"/>
+                        <outlet property="finishButtomOutlet" destination="TpH-Gy-634" id="O1y-Hy-Cmj"/>
+                        <outlet property="playerLabel" destination="xYh-oX-I4s" id="Z2Y-dh-omL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2P-0m-fod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="94"/>
+        </scene>
+        <!--GamePVPVC-->
+        <scene sceneID="L8f-Rc-Dqn">
+            <objects>
+                <viewController storyboardIdentifier="GamePVPVC" id="FHL-aC-OdY" customClass="GamePVPVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BgC-f4-AK7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFH-Dj-Zcc">
+                                <rect key="frame" x="16" y="322" width="103" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ОТВЕТИТЬ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="FHL-aC-OdY" eventType="touchUpInside" id="qbp-zy-u82"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdv-fw-XkS">
+                                <rect key="frame" x="209" y="322" width="95" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="СДАТЬСЯ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishButton:" destination="FHL-aC-OdY" eventType="touchUpInside" id="q5b-uI-PkB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГОРОД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paV-zu-lt0">
+                                <rect key="frame" x="16" y="220" width="288" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ХОД ИГРОКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFn-cs-C5m">
+                                <rect key="frame" x="16" y="20" width="115" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7h-Rb-Z6a">
+                                <rect key="frame" x="293" y="20" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ВВЕДИТЕ ГОРОД" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Afw-rK-qhX">
+                                <rect key="frame" x="16" y="263" width="288" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ht7-HN-BQ7">
+                                <rect key="frame" x="16" y="49" width="288" height="206"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="knn-OU-Aqe" firstAttribute="trailing" secondItem="paV-zu-lt0" secondAttribute="trailing" constant="16" id="73M-1w-tgf"/>
+                            <constraint firstItem="dFH-Dj-Zcc" firstAttribute="top" secondItem="Afw-rK-qhX" secondAttribute="bottom" constant="17" id="BJb-i0-s5l"/>
+                            <constraint firstItem="dFH-Dj-Zcc" firstAttribute="leading" secondItem="knn-OU-Aqe" secondAttribute="leading" constant="16" id="G3I-GU-jfZ"/>
+                            <constraint firstItem="Afw-rK-qhX" firstAttribute="top" secondItem="paV-zu-lt0" secondAttribute="bottom" constant="8" id="IS4-RE-d8Y"/>
+                            <constraint firstItem="mdv-fw-XkS" firstAttribute="top" secondItem="Afw-rK-qhX" secondAttribute="bottom" constant="17" id="MEz-6T-B9q"/>
+                            <constraint firstItem="paV-zu-lt0" firstAttribute="leading" secondItem="knn-OU-Aqe" secondAttribute="leading" constant="16" id="OXI-mO-TMd"/>
+                            <constraint firstItem="rFn-cs-C5m" firstAttribute="leading" secondItem="knn-OU-Aqe" secondAttribute="leading" constant="16" id="OfX-ff-kj6"/>
+                            <constraint firstItem="Afw-rK-qhX" firstAttribute="leading" secondItem="knn-OU-Aqe" secondAttribute="leading" constant="16" id="PRh-ys-xla"/>
+                            <constraint firstItem="knn-OU-Aqe" firstAttribute="trailing" secondItem="n7h-Rb-Z6a" secondAttribute="trailing" constant="16" id="UaG-J0-tFT"/>
+                            <constraint firstItem="Afw-rK-qhX" firstAttribute="centerY" secondItem="BgC-f4-AK7" secondAttribute="centerY" id="WtF-gF-Y3m"/>
+                            <constraint firstItem="n7h-Rb-Z6a" firstAttribute="top" secondItem="knn-OU-Aqe" secondAttribute="top" constant="20" id="Y1S-FR-kGV"/>
+                            <constraint firstItem="knn-OU-Aqe" firstAttribute="trailing" secondItem="ht7-HN-BQ7" secondAttribute="trailing" constant="16" id="dO3-KQ-iQH"/>
+                            <constraint firstItem="paV-zu-lt0" firstAttribute="top" secondItem="rFn-cs-C5m" secondAttribute="bottom" constant="179" id="fLx-re-WpU"/>
+                            <constraint firstItem="knn-OU-Aqe" firstAttribute="trailing" secondItem="mdv-fw-XkS" secondAttribute="trailing" constant="16" id="j8G-3b-4v2"/>
+                            <constraint firstItem="ht7-HN-BQ7" firstAttribute="leading" secondItem="knn-OU-Aqe" secondAttribute="leading" constant="16" id="rXh-Ex-cL1"/>
+                            <constraint firstItem="ht7-HN-BQ7" firstAttribute="top" secondItem="rFn-cs-C5m" secondAttribute="bottom" constant="8" id="wui-fY-F5l"/>
+                            <constraint firstItem="Afw-rK-qhX" firstAttribute="centerX" secondItem="BgC-f4-AK7" secondAttribute="centerX" id="xaP-G9-G3g"/>
+                            <constraint firstItem="Afw-rK-qhX" firstAttribute="top" secondItem="ht7-HN-BQ7" secondAttribute="bottom" constant="8" id="yA1-fR-5V2"/>
+                            <constraint firstItem="rFn-cs-C5m" firstAttribute="top" secondItem="knn-OU-Aqe" secondAttribute="top" constant="20" id="yfY-gV-dfw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="knn-OU-Aqe"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButtonOutlet" destination="dFH-Dj-Zcc" id="wnp-F6-CrN"/>
+                        <outlet property="cityImage" destination="ht7-HN-BQ7" id="DT5-98-XBt"/>
+                        <outlet property="cityLabel" destination="paV-zu-lt0" id="5He-fA-Lbf"/>
+                        <outlet property="cityTF" destination="Afw-rK-qhX" id="hT4-Sz-e4d"/>
+                        <outlet property="finishButtomOutlet" destination="mdv-fw-XkS" id="pT9-1j-jB2"/>
+                        <outlet property="playerLabel" destination="n7h-Rb-Z6a" id="rSK-AY-joh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl5-4M-YxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519" y="771"/>
+        </scene>
+        <!--FinalPVPVC-->
+        <scene sceneID="e3M-2r-M3F">
+            <objects>
+                <viewController storyboardIdentifier="FinalPVPVC" id="dZi-C7-xYG" customClass="FinalPVPVC" customModule="Goroda_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Td4-B8-3Ut">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПОБЕДА ИГРОКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upu-lE-NBd">
+                                <rect key="frame" x="50" y="45" width="220" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-RM-oSj">
+                                <rect key="frame" x="16" y="130" width="288" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-po-32e">
+                                <rect key="frame" x="75" y="508" width="175" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="ЗАКОНЧИТЬ ИГРУ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishGame:" destination="dZi-C7-xYG" eventType="touchUpInside" id="FCn-lB-Mb6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jaz-hM-2vn" firstAttribute="trailing" secondItem="Wdy-po-32e" secondAttribute="trailing" constant="70" id="0O9-qi-mT6"/>
+                            <constraint firstItem="Wdy-po-32e" firstAttribute="leading" secondItem="Jaz-hM-2vn" secondAttribute="leading" constant="75" id="1gS-mz-Rfh"/>
+                            <constraint firstItem="u5I-RM-oSj" firstAttribute="top" secondItem="upu-lE-NBd" secondAttribute="bottom" constant="55" id="2xM-oO-RKp"/>
+                            <constraint firstItem="upu-lE-NBd" firstAttribute="centerX" secondItem="Td4-B8-3Ut" secondAttribute="centerX" id="63M-ga-Vkp"/>
+                            <constraint firstItem="u5I-RM-oSj" firstAttribute="centerX" secondItem="Td4-B8-3Ut" secondAttribute="centerX" id="BzO-cC-vRh"/>
+                            <constraint firstItem="u5I-RM-oSj" firstAttribute="leading" secondItem="Jaz-hM-2vn" secondAttribute="leading" constant="16" id="DBW-YQ-1xz"/>
+                            <constraint firstItem="Jaz-hM-2vn" firstAttribute="trailing" secondItem="upu-lE-NBd" secondAttribute="trailing" constant="50" id="Do8-2W-5ED"/>
+                            <constraint firstItem="Jaz-hM-2vn" firstAttribute="bottom" secondItem="Wdy-po-32e" secondAttribute="bottom" constant="25" id="KE1-Me-mt5"/>
+                            <constraint firstItem="upu-lE-NBd" firstAttribute="top" secondItem="Jaz-hM-2vn" secondAttribute="top" constant="45" id="SWw-sQ-iBY"/>
+                            <constraint firstItem="Jaz-hM-2vn" firstAttribute="trailing" secondItem="u5I-RM-oSj" secondAttribute="trailing" constant="16" id="Yhx-Lx-sLQ"/>
+                            <constraint firstItem="upu-lE-NBd" firstAttribute="leading" secondItem="Jaz-hM-2vn" secondAttribute="leading" constant="50" id="iL9-t9-C69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jaz-hM-2vn"/>
+                    </view>
+                    <connections>
+                        <outlet property="finishButtonOutlet" destination="Wdy-po-32e" id="Tpz-p8-6En"/>
+                        <outlet property="winPlayer" destination="u5I-RM-oSj" id="Cl7-Pz-cZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfE-Dt-F6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2244.375" y="767.95774647887322"/>
+        </scene>
+    </scenes>
+</document>

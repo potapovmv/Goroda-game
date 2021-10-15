@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		B2B72B2426D3929B003E33A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B2326D3929B003E33A1 /* AppDelegate.swift */; };
 		B2B72B2626D3929B003E33A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B2526D3929B003E33A1 /* SceneDelegate.swift */; };
-		B2B72B2826D3929B003E33A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B2726D3929B003E33A1 /* ViewController.swift */; };
+		B2B72B2826D3929B003E33A1 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B2726D3929B003E33A1 /* StartVC.swift */; };
 		B2B72B2B26D3929B003E33A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B72B2926D3929B003E33A1 /* Main.storyboard */; };
 		B2B72B2E26D3929B003E33A1 /* Goroda_game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B2C26D3929B003E33A1 /* Goroda_game.xcdatamodeld */; };
 		B2B72B3026D392A4003E33A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B72B2F26D392A4003E33A1 /* Assets.xcassets */; };
 		B2B72B3326D392A4003E33A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B72B3126D392A4003E33A1 /* LaunchScreen.storyboard */; };
+		B2B72B3F26D39792003E33A1 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B3E26D39792003E33A1 /* GameVC.swift */; };
+		B2B72B4126D399FF003E33A1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B72B4026D399FF003E33A1 /* DataManager.swift */; };
+		B2C9451B270242B9004B152E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9451A270242B9004B152E /* SettingsVC.swift */; };
+		B2C9451D27024B82004B152E /* FinalPVPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9451C27024B82004B152E /* FinalPVPVC.swift */; };
+		B2E43BAC26E0BF5F00563B7B /* FinalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E43BAB26E0BF5F00563B7B /* FinalVC.swift */; };
+		B2FFD37E26FA7AEF006EBAD2 /* GamePVPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFD37D26FA7AEF006EBAD2 /* GamePVPVC.swift */; };
+		B2FFD38026FA852E006EBAD2 /* RegulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFD37F26FA852E006EBAD2 /* RegulationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2B72B2026D3929B003E33A1 /* Goroda-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goroda-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B72B2326D3929B003E33A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2B72B2526D3929B003E33A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2B72B2726D3929B003E33A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2B72B2726D3929B003E33A1 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		B2B72B2A26D3929B003E33A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2B72B2D26D3929B003E33A1 /* Goroda_game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goroda_game.xcdatamodel; sourceTree = "<group>"; };
 		B2B72B2F26D392A4003E33A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2B72B3226D392A4003E33A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2B72B3426D392A4003E33A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B72B3E26D39792003E33A1 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		B2B72B4026D399FF003E33A1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B2C9451A270242B9004B152E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B2C9451C27024B82004B152E /* FinalPVPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinalPVPVC.swift; path = "Goroda-game/Storyboard/FinalPVPVC.swift"; sourceTree = SOURCE_ROOT; };
+		B2E43BAB26E0BF5F00563B7B /* FinalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalVC.swift; sourceTree = "<group>"; };
+		B2FFD37D26FA7AEF006EBAD2 /* GamePVPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePVPVC.swift; path = "Goroda-game/Storyboard/GamePVPVC.swift"; sourceTree = SOURCE_ROOT; };
+		B2FFD37F26FA852E006EBAD2 /* RegulationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,55 @@
 		B2B72B2226D3929B003E33A1 /* Goroda-game */ = {
 			isa = PBXGroup;
 			children = (
-				B2B72B2326D3929B003E33A1 /* AppDelegate.swift */,
-				B2B72B2526D3929B003E33A1 /* SceneDelegate.swift */,
-				B2B72B2726D3929B003E33A1 /* ViewController.swift */,
-				B2B72B2926D3929B003E33A1 /* Main.storyboard */,
-				B2B72B2F26D392A4003E33A1 /* Assets.xcassets */,
-				B2B72B3126D392A4003E33A1 /* LaunchScreen.storyboard */,
-				B2B72B3426D392A4003E33A1 /* Info.plist */,
+				B2B72B3B26D39328003E33A1 /* Resourses */,
+				B2B72B3A26D3931C003E33A1 /* ViewControllers */,
+				B2B72B3C26D3933E003E33A1 /* Storyboard */,
+				B2B72B3D26D3934C003E33A1 /* Settings */,
 				B2B72B2C26D3929B003E33A1 /* Goroda_game.xcdatamodeld */,
 			);
 			path = "Goroda-game";
+			sourceTree = "<group>";
+		};
+		B2B72B3A26D3931C003E33A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2C9451C27024B82004B152E /* FinalPVPVC.swift */,
+				B2FFD37D26FA7AEF006EBAD2 /* GamePVPVC.swift */,
+				B2B72B2726D3929B003E33A1 /* StartVC.swift */,
+				B2FFD37F26FA852E006EBAD2 /* RegulationVC.swift */,
+				B2C9451A270242B9004B152E /* SettingsVC.swift */,
+				B2B72B3E26D39792003E33A1 /* GameVC.swift */,
+				B2E43BAB26E0BF5F00563B7B /* FinalVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2B72B3B26D39328003E33A1 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B2B72B2F26D392A4003E33A1 /* Assets.xcassets */,
+				B2B72B4026D399FF003E33A1 /* DataManager.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		B2B72B3C26D3933E003E33A1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B2B72B2926D3929B003E33A1 /* Main.storyboard */,
+				B2B72B3126D392A4003E33A1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B2B72B3D26D3934C003E33A1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B2B72B3426D392A4003E33A1 /* Info.plist */,
+				B2B72B2326D3929B003E33A1 /* AppDelegate.swift */,
+				B2B72B2526D3929B003E33A1 /* SceneDelegate.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B72B2826D3929B003E33A1 /* ViewController.swift in Sources */,
+				B2E43BAC26E0BF5F00563B7B /* FinalVC.swift in Sources */,
+				B2FFD38026FA852E006EBAD2 /* RegulationVC.swift in Sources */,
+				B2B72B2826D3929B003E33A1 /* StartVC.swift in Sources */,
+				B2C9451D27024B82004B152E /* FinalPVPVC.swift in Sources */,
+				B2B72B4126D399FF003E33A1 /* DataManager.swift in Sources */,
+				B2FFD37E26FA7AEF006EBAD2 /* GamePVPVC.swift in Sources */,
 				B2B72B2E26D3929B003E33A1 /* Goroda_game.xcdatamodeld in Sources */,
 				B2B72B2426D3929B003E33A1 /* AppDelegate.swift in Sources */,
+				B2B72B3F26D39792003E33A1 /* GameVC.swift in Sources */,
 				B2B72B2626D3929B003E33A1 /* SceneDelegate.swift in Sources */,
+				B2C9451B270242B9004B152E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCJ93M3YP3;
-				INFOPLIST_FILE = "Goroda-game/Info.plist";
+				INFOPLIST_FILE = "Goroda-game/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCJ93M3YP3;
-				INFOPLIST_FILE = "Goroda-game/Info.plist";
+				INFOPLIST_FILE = "Goroda-game/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
